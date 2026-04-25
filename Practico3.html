@@ -7,9 +7,16 @@
 <body>
 
     <div class="container">
-        <h1 style="text-align: center;background-color: blue;">Pagina deportiva de Boca Juniors</h1>
-        <h2 style="background-color: yellow;">Alumno: Cristian Javier Arias Cruz._Curso: 2C</h2>
-        <h2 style="text-align: center; background-color: blue;">¿Como inicio el Club Boca Junios?</h2>
+        <h1>Pagina deportiva de Boca Juniors</h1>
+        <h2>Alumno: Cristian Javier Arias Cruz._Curso: 2C</h2>
+        <h2>¿Como inicio el Club Boca Junios?</h2>
+        <hr>
+        <nav>
+            <a href="#tabla">Tabla de Copas</a>
+            -
+            <a href="#socios">¿Queres ser socio?</a>
+        </nav>
+        <hr>
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Boca_juniors_1981.jpg" style="width: 350px;height: 200px;">
         <p>Boca Juniors fue fundado el 3 de abril de 1905 en el barrio de La Boca, Buenos Aires, por un 
             grupo de jóvenes descendientes de inmigrantes genoveses (de ahí el apodo xeneize), entre 
@@ -48,21 +55,100 @@
             <img src="https://museodefutbol.com/wp-content/uploads/2025/06/la-bombonera.png" style="width: 350px; height: 200px;">
             <br>
             <br>
-            <br>
-            <h2>Titulos internacionales</h2>
-            <h3>•	Copa Libertadores de América (6): 1977, 1978, 2000, 2001, 2003, 2007</h3>
-            <h3>•	Copa Intercontinental (3): 1977, 2000, 2003. </h3>
-            <h3>•	Recopa Sudamericana (4): 1990, 2005, 2006, 2008. </h3>
-            <h3>•	Copa Sudamericana (2): 2004, 2005. </h3>
-            <h3>•	Supercopa Sudamericana (1): 1989.</h3>
-            <h3>•	Copa Master de Supercopa (1): 1992. </h3>
-            <h3>•	Copa de Oro Nicolás Leoz (1): 1993. </h3>
-            <h3>•	Otros títulos históricos menores o amistosos oficiales como las Copas Confraternidad Escobar-Gerona (1945, 1946) y la Copa Competencia Británica (1946). </h3>
-            <br>
+            <hr>
+            <section id="tabla">
+            <h2>Tabla de Copas</h2>
+            <table border="1" cellpadding="9" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Titulos Internacionales</th>
+                    <th>Cantidad</th>
+                    <th>Años</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>•	Copa Libertadores de América</td>
+                    <td>6</td>
+                    <td>1977, 1978, 2000, 2001, 2003, 2007.</td>
+                </tr>
+                <tr>
+                    <td>•	Copa Intercontinental</td>
+                    <td>3</td>
+                    <td>1977, 2000, 2003.</td>
+                </tr>
+                <tr>
+                    <td>•	Recopa Sudamericana</td>
+                    <td>4</td>
+                    <td>1990, 2005, 2006, 2008.</td>
+                </tr>
+                <tr>
+                    <td>•	Copa Sudamericana</td>
+                    <td>2</td>
+                    <td>2004, 2005.</td>
+                </tr>
+                <tr>
+                    <td>•	Supercopa Sudamericana</td>
+                    <td>1</td>
+                    <td>1989.</td>
+                </tr>
+                <tr>
+                    <td>•	Copa Master de Supercopa</td>
+                    <td>1</td>
+                    <td>1992.</td>
+                </tr>
+                <tr>
+                    <td>•	Copa de Oro Nicolás Leoz</td>
+                    <td>1</td>
+                    <td>1993.</td>
+                </tr>
+                <tr>
+                    <td>•	Copas Confraternidad Escobar-Gerona</td>
+                    <td>1</td>
+                    <td>1945,1946</td>
+                </tr>
+                <tr>
+                    <td>•	Copa Competencia Británica</td>
+                    <td>1</td>
+                    <td>1946.</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
             <br>
             <br>
             <br>
             <img src="https://bocajuniors2016.wordpress.com/wp-content/uploads/2016/02/9cf.jpg?w=1000" style="width: 350px; height: 200px;">
+            <br>
+            <br>
+            <hr>
+            <section id="socios"></section>
+            <h2>¿Te interesa ser socio?</h2>
+            <p>
+                Si estas interesado te invito a que te registres y nos dejes tu informacion como foto de dni para cargar a la pagina de socios Muchas Gracias.
+            </p>
+            <form action="/Socios.html" method="POST">
+            <fieldset>
+                <legend>Datos del Socio</legend>
+                <label for="nombre-socio">Nombre Socio:</label>
+                <br>
+                <input type="text" id="nombre-socio" name="nombre" placeholder="Ej: Enrrique, Suarez" required>
+                <br>
+                <br>
+                <label for="email-socio">Correo electrónico:</label>
+                <br>
+                <input type="email" id="email-socio" name="email" placeholder="boca.pasion@ejemplo.com"required>
+                <br>
+                <br>
+                <label for="password-socio">Contraseña</label>
+                <br>
+                <input type="password" id="password-socio" name="password" minlength="6"required>
+                <br>
+                <br>
+                <label for="fecha-socio">Fecha de Nacimiento</label>
+                <br>
+                <input type="date" id="fecha-socio" name="fecha_nacimiento" min="1990-01-01" max="2010-12-31">
+            </fieldset>
         </p>
     </div>
     
